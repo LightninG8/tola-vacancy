@@ -32,7 +32,6 @@ async def start(message: types.Message):
 
 @router.message()
 async def on_message(message: types.Message):
-  print(message)
   try:
     if message.forward_from != None:
       await bot.forward_message(chat_id=-1002485636124, from_chat_id=message.from_user.id, message_id=message.message_id)

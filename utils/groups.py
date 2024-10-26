@@ -100,8 +100,7 @@ async def watch_group(client):
     async def my_event_handler(event):
       try:       
         post_category = await check_post_category(event)
-        
-    
+            
         if (post_category):
           print(post_category)
           await client.forward_messages(BOT_USERNAME, event.message)
