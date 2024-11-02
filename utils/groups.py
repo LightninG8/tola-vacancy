@@ -40,6 +40,7 @@ async def check_post_category(event):
 # Обработчик новых постов в канале
 async def watch_group(client):
     chats_list = [
+      -1001703593626,
       -1001804485641,
       -1001545309331,
       -1002213805855,
