@@ -30,7 +30,7 @@ async def bootstrap_accounts():
   accounts = [accounts[0]]
   
   for account in accounts:
-    clients_list.append(account_work(TelegramClient(StringSession(account["string_session"]), account["app_id"], account["app_hash"], proxy=proxy)));
+    clients_list.append(account_work(TelegramClient(StringSession(account["string_session"]), account["app_id"], account["app_hash"])));
   
   await asyncio.gather(*clients_list)
 
